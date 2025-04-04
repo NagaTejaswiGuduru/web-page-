@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><input type="text" id="search" placeholder="Search products..."></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h1>Discover the Future with Apple</h1>
+        <p>Explore the latest innovations from Apple.</p>
+        <button onclick="scrollToProducts()">Shop Now</button>
+    </section>
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        <select id="sort">
+            <option value="default">Sort by</option>
+            <option value="price">Price</option>
+            <option value="popularity">Popularity</option>
+        </select>
+        <div class="product-list">
+            <div class="product" data-price="999" data-popularity="5">
+                <img src="iphone.jpg" alt="iPhone">
+                <h3>iPhone 15 Pro</h3>
+                <p>$999</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product" data-price="1299" data-popularity="4">
+                <img src="macbook.jpg" alt="MacBook">
+                <h3>MacBook Air M2</h3>
+                <p>$1299</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Apple is committed to innovation and design excellence.</p>
+        <video controls>
+            <source src="apple_intro.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Apple Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
